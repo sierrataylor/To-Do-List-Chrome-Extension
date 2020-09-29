@@ -1,0 +1,25 @@
+{
+  "name": "To-Do List App",
+  
+  "version": "1.0",
+  
+  "description": "This Chrome extension allows the user to make a to-do list.",
+  
+  "manifest_version": 2,
+  "incognito": "split",
+  "content_scripts": [
+    {
+      "matches":[
+        "<all_urls>"
+      ],
+      "js": ["main.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "img/todo-pencil.png",
+    "default_popup": "index.html"
+  },
+"icons": {
+    "128": "img/todo-pencil.png"
+    }
+}
